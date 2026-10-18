@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yermis — Política de privacidad</title>
+<style>
+  :root { --bg: #f5efe1; --text: #1f2a2e; --muted: #5b6468; --accent: #e8731a; --card: #fffaf0; --line: #e2d8c3; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #161c1f; --text: #ece6d8; --muted: #a9b0b3; --accent: #f08a3a; --card: #1f272b; --line: #2f393e; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.9rem; margin: 0 0 4px; }
+  h2 { font-size: 1.2rem; margin: 32px 0 8px; color: var(--accent); }
+  .meta { color: var(--muted); margin: 0 0 24px; }
+  .lang { float: right; font-size: .95rem; }
+  a { color: var(--accent); }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px 20px; }
+  ul { padding-left: 22px; }
+</style>
+</head>
+<body>
+<main>
+  <p class="lang"><a href="en.html">English</a></p>
+  <h1>Política de privacidad de Yermis</h1>
+  <p class="meta">Vigente desde el 15 de octubre de 2026 · Versión de la app: 1.0.0 (incluye el juego en línea, beta)</p>
+
+  <div class="card">
+    <strong>En resumen:</strong> tu progreso se guarda solo en tu teléfono. Para el juego en línea (beta) usamos
+    servicios de Unity que procesan un identificador anónimo, la dirección IP para conectar los teléfonos y el nombre
+    que tú eliges para jugar. No pedimos tu nombre real, ni correo, ni cuenta. No vendemos datos, no los usamos para
+    publicidad y el juego no tiene anuncios ni compras. Contra la máquina se juega sin internet.
+  </div>
+
+  <h2>Quiénes somos</h2>
+  <p>Yermis es un juego para Android de un desarrollador independiente de Colombia. Esta política explica qué pasa con
+  la información cuando juegas.</p>
+
+  <h2>Qué información guarda el juego</h2>
+  <p>Para que puedas seguir donde ibas, el juego guarda un archivo <strong>solo en tu teléfono</strong>, dentro del
+  espacio privado de la app. Ese archivo contiene:</p>
+  <ul>
+    <li>Tu progreso: partidos ganados en la Copa Tapa de Oro, estrellas, tapas coleccionadas y personajes desbloqueados.</li>
+    <li>Tus ajustes: volumen, vibración, calidad gráfica, dificultad y si prefieres jugar de día o de noche.</li>
+    <li>El personaje que elegiste y si ya viste la introducción y la práctica.</li>
+    <li>El nombre que elegiste para el juego en línea y la última respuesta de Remote Config (si el juego en línea está
+    encendido).</li>
+  </ul>
+  <p>Ese archivo se queda en tu teléfono: no lo enviamos a ningún servidor y no lo vemos (de él solo sale el nombre
+  que elegiste, cuando juegas en línea). Si desinstalas el juego o
+  borras sus datos desde los ajustes de Android, se borra.</p>
+
+  <h2>El juego en línea (beta) y los servicios de Unity</h2>
+  <p>Para jugar con amigos en línea, y para saber si el juego en línea está disponible, Yermis usa tres servicios de
+  Unity Gaming Services (Unity Technologies), que actúa como proveedor nuestro y procesa los datos por cuenta nuestra:</p>
+  <ul>
+    <li><strong>Unity Authentication (cuenta anónima):</strong> crea un identificador de jugador al azar, sin nombre,
+    correo ni contraseña. Sirve para que los demás servicios sepan que la petición viene del juego. Se guarda hasta
+    que se borre.
+    (<a href="https://docs.unity.com/en-us/authentication/privacy-and-consent/overview">documentación de Unity</a>)</li>
+    <li><strong>Unity Relay:</strong> conecta los teléfonos de una sala. Para hacerlo procesa la dirección IP de cada
+    teléfono y el identificador de jugador; Unity los conserva 30 días.
+    (<a href="https://docs.unity.com/en-us/mps-sdk/privacy/privacy-overview-relay">documentación de Unity</a>)</li>
+    <li><strong>Unity Remote Config:</strong> nos deja encender o apagar el juego en línea sin publicar otra versión.
+    El juego lo consulta al abrirse y al entrar a EN LÍNEA; en cada consulta se envían la dirección IP, un
+    identificador de instalación, el identificador de jugador y datos básicos del teléfono (modelo, versión de Android,
+    idioma, memoria, pantalla y versión de la app). Remote Config los usa en el momento para responder y no los guarda.
+    (<a href="https://docs.unity.com/en-us/remote-config/privacy-and-consent/overview">documentación de Unity</a>)</li>
+  </ul>
+  <p>Además, el <strong>nombre que eliges para jugar en línea</strong> (máximo 12 letras) lo ven los demás jugadores
+  de tu sala. Viaja entre los teléfonos a través de Relay y no se guarda en ningún servidor. No es obligatorio usar
+  tu nombre real; si el nombre tiene groserías, el juego lo cambia por uno al azar (por ejemplo, "Jugador 4821").</p>
+  <p>El juego en línea <strong>no tiene chat de texto ni de voz</strong>.</p>
+  <p>Todo viaja cifrado (HTTPS y DTLS). Estos datos solo se usan para que el juego en línea funcione: no se venden, no
+  se usan para publicidad y no se comparten con nadie más. Más detalles en la
+  <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">política de privacidad de Unity para
+  jugadores</a>.</p>
+
+  <h2>Qué información no recopilamos</h2>
+  <ul>
+    <li>No pedimos tu nombre real, correo, teléfono ni contraseña.</li>
+    <li>No usamos tu ubicación precisa (GPS), tus contactos, tus fotos, el micrófono ni la cámara.</li>
+    <li>No usamos el identificador de publicidad ni rastreamos lo que haces en otras apps.</li>
+    <li>No hay analítica propia, ni anuncios, ni compras.</li>
+  </ul>
+
+  <h2>Internet y permisos</h2>
+  <p>Contra la máquina, el juego se juega completo sin conexión. Usa internet para el juego en línea y para consultar
+  si el juego en línea está disponible (Remote Config). También usa el permiso de vibración, para los efectos de
+  vibración que puedes apagar en los ajustes.</p>
+  <p>Google Play puede recopilar por su cuenta información técnica del dispositivo (por ejemplo, informes de fallos)
+  según su propia política de privacidad. Eso lo maneja Google, no el juego.</p>
+
+  <h2>Borrar tus datos</h2>
+  <p>Tu progreso se borra al desinstalar el juego o borrar sus datos desde los ajustes de Android. Para borrar el
+  identificador anónimo del juego en línea y lo asociado a él en Unity, escríbenos al correo de abajo y lo borramos.</p>
+
+  <h2>Niños</h2>
+  <p>Yermis no está dirigido a menores de 13 años. No pedimos datos personales a nadie; el juego en línea usa solo el
+  identificador anónimo, la IP para conectar y el nombre que cada quien elige.</p>
+
+  <h2>Cambios futuros</h2>
+  <p>Si en una versión futura agregamos algo más que use datos (por ejemplo, analítica para mejorar el juego o
+  anuncios), actualizaremos esta página <strong>antes</strong> de publicar esa versión, diremos aquí qué datos se
+  usan, para qué, con quién se comparten y cómo pedir que se borren, y cambiaremos la fecha de arriba.</p>
+  <!-- Para actualizar: agregar aquí una sección por cada servicio nuevo (nombre del proveedor, qué datos, para qué,
+       enlace a su política) y actualizar la declaración de Seguridad de los datos en Play Console. -->
+
+  <h2>Contacto</h2>
+  <p>Si tienes preguntas sobre esta política, escribe a: <a href="mailto:santiagobernalb@hotmail.com">santiagobernalb@hotmail.com</a></p>
+</main>
+</body>
+</html>
